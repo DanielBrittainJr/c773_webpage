@@ -5,35 +5,50 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles.css">
 	<title>Birds</title>
+
 </head>
 
 <body>
-	<img src="/images/ppp.png" alt="Paradigm Pet Professionals">
 
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="html/resources.html">Resources</a></li>
-			<li><a href="html/pets.html">Pets</a></li>
-			<li><a href="html/about.html">About Us</a></li>
-		</ul>
-	</nav>
-
-	<nav>
-		<ul>
-			<li><a href="dogs.html">Dogs <img src="/images/dog2.jpg" alt="Dog"></a></li>
-			<li><a href="cats.html">Cats <img src="/images/cat3.jpg" alt="Cat"></a></li>
-			<li><a href="birds.html">Birds <img src="/images/bird3.jpg" alt="Bird"></a></li>
-		</ul>
-	</nav>
+	<header>
+		<nav>
+			<img class="logo" src="/images/logo.png" alt="Paradigm Pet Professionals">
+			<div class="top">
+				<form action="search"></form>
+				<label for="serach">Search:</label>
+				<input type="text" id="search" name="search">
+				<button>Search</button>
+			</div>
 
 
+			<ul class="nav__links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="pets.html">Pet Advice</a></li>
+				<li><a href="resources.html">Extra Resources</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="animal">
+		<nav>
+			<ul>
+				<li><a href="dogs.html">Dogs <img src="/images/dog2.jpg" alt="Dog"></a></li>
+				<li><a href="cats.html">Cats <img src="/images/cat3.jpg" alt="Cat"></a></li>
+				<li><a href="birds.html">Birds <img src="/images/bird3.jpg" alt="Bird"></a></li>
+			</ul>
+		</nav>
+	</div>
 
 
 
 
-	<div>
+
+
+	<div class="h1">
 		<h1>Birds</h1>
 		<p>Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about
 			two inches long and a little over 1/20 of an ounce) to as large as an ostrich. While most birds fly, there
@@ -53,17 +68,64 @@
 	</div>
 
 	<footer>
-		<address>
-			<ul>
-				<li>Webmaster: Daniel Brittain</li>
-				<li><a href="index.html">Visit Our Homepage</a></li>
-				<li><a href="html/contactus.html">Get In Contact With Us</a></li>
-				<li><a href="html/faq.html">Frequently Asked Questions</a></li>
-				<li><a href="html/pets.html">Pet Advice</a></li>
-				<li><a href="html/resources">Extra Resources</a></li>
-			</ul>
-		</address>
+		<div class="main-content">
+			<div class="left box">
+				<h2>About us</h2>
+				<div class="content">
+					<p>Paradigm Pet Professionals is an evidence-based pet care advice for every pet lover. Paradigm Pet
+						Professionals has 12 years’ experience working with pet owners, certifications in pet health and
+						nutrition, and customer recognition for outstanding support. </p>
+					<div class="social">
+						<a href=""><span class=""></span></a>
+						<a href="#"><span class=""></span></a>
+						<a href=""><span class=""></span></a>
+						<a href=></a><span class=""></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="center box">
+				<h2>Address</h2>
+				<div class="content">
+					<div class="Place">
+						<span class="text"></span><a href="../index.html">Visit Our Homepage</a></span>
+					</div>
+					<br>
+					<div class="email">
+						<span class="text"><a href="pets.html">Pet Advice</a></span>
+					</div>
+					<br>
+					<div class="resources">
+						<span class="text"><a href="resources.html">Extra Resources</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="right box">
+				<h2>Contact us</h2>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<div class="text">Email *</div>
+							<input type="email" required>
+						</div>
+						<div class="msg">
+							<div class="text">Message *</div>
+							<textarea rows="2" cols="25" required></textarea>
+						</div>
+						<div class="btn">
+							<button type="submit">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<center>
+				<span class="credit">Created By Daniel Brittain | </span>
+				<span class="far fa-copyright"></span><span> &copy; 2021 All rights reserved.</span>
+			</center>
+		</div>
 	</footer>
+
 
 </body>
 
